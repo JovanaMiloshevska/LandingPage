@@ -1,0 +1,43 @@
+.left-text-box {
+  position: relative;
+}
+.right-text-box {
+  position: relative;
+}
+.left-box-photo {
+  position: absolute;
+  right: 0;
+}
+
+.for-cards {
+  justify-content: space-around;
+}
+.text-behind-photo {
+  text-align: center;
+}
+
+.add-to-cart {
+  background: dimgray;
+}
+
+.products {
+  flex: display;
+  justify-content: space-around;
+}
+.photos {
+  display: -ms-inline-grid;
+}
+.title-instagram {
+  font-size: 100px;
+  background: lightgreen;
+  text-align: center;
+}
+.title-sponsor {
+  font-size: 100px;
+  text-align: center;
+  background: lightgreen;
+}
+.footer {
+  background: lightgreen;
+  display: -ms-inline-grid;
+}
