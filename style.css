@@ -1,16 +1,34 @@
 .left-text-box {
   position: relative;
+  background: white;
 }
 .right-text-box {
+  text-align: end;
   position: relative;
-}
-.left-box-photo {
-  position: absolute;
-  right: 0;
+  background: white;
 }
 
-.for-cards {
-  justify-content: space-around;
+.left-text {
+  background: #daf196;
+  padding-left: 20px;
+  padding-top: 20px;
+}
+.right-text {
+  background: #daf196;
+  padding-right: 20px;
+  padding-top: 20px;
+}
+.left-box-photo {
+  display: flex;
+  justify-content: flex-end;
+}
+.right-box-photo {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.four-cards {
+  justify-content: space-between;
 }
 .text-behind-photo {
   text-align: center;
@@ -28,16 +46,53 @@
   display: -ms-inline-grid;
 }
 .title-instagram {
-  font-size: 100px;
-  background: lightgreen;
+  font-size: 30px;
+  background: #daf196;
   text-align: center;
+  width: 50%;
+  margin: auto;
 }
 .title-sponsor {
-  font-size: 100px;
+  font-size: 90px;
   text-align: center;
-  background: lightgreen;
+  background: #daf196;
 }
 .footer {
-  background: lightgreen;
+  background: #daf196;
   display: -ms-inline-grid;
+}
+.smaller-titles::before {
+  display: inline-block;
+  content: "";
+  border-top: 0.1rem solid black;
+  width: 4rem;
+  margin-right: 1rem;
+  transform: translateY(-1rem);
+}
+.title::before {
+  display: inline-block;
+  content: "";
+  border-top: 0.1rem solid black;
+  width: 7rem;
+  margin-right: 1rem;
+  transform: translateY(-1rem);
+}
+.cards {
+  position: relative;
+  align-items: center;
+  background: #daf196;
+  margin-bottom: 30px;
+}
+.image-before-text {
+  display: flex;
+  justify-content: center;
+  margin-top: -25px;
+}
+
+.strike-price {
+  text-decoration: line-through;
+  color: red;
+}
+.discover-button {
+  color: black;
 }
