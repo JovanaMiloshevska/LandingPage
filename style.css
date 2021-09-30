@@ -1,4 +1,16 @@
+h6 {
+  font-size: 24px;
+}
+.nav-link {
+  font-weight: 400;
+  font-size: 20px;
+  color: #333333;
+}
+.login {
+  color: black;
+}
 .left-text-box {
+  margin-bottom: 25px;
   position: relative;
   background: white;
 }
@@ -14,28 +26,62 @@
   padding-top: 20px;
 }
 .right-text {
+  position: relative;
   background: #daf196;
   padding-right: 20px;
   padding-top: 20px;
 }
 .left-box-photo {
+  margin-top: 25px;
   display: flex;
   justify-content: flex-end;
 }
+
 .right-box-photo {
+  margin-top: 25px;
   display: flex;
   justify-content: flex-start;
 }
 
-.four-cards {
-  justify-content: space-between;
-}
 .text-behind-photo {
-  text-align: center;
+  margin-left: 25px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+.discount {
+  color: #777777;
+}
+.strike-price {
+  text-decoration: line-through;
+  color: #777777;
+}
+.jm-card-name-and-price {
+  font-size: 24px;
+}
+.jm-dot-and-add-to-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.jm-circle-before-add-to-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  background: #777777;
+  margin-right: 5px;
+}
+.black-circle {
+  padding-bottom: 1px;
 }
 
 .add-to-cart {
-  background: dimgray;
+  display: inline-block;
+  background: #333333;
+  color: white;
+  padding: 5px 39px;
 }
 
 .products {
@@ -45,6 +91,7 @@
 .photos {
   display: -ms-inline-grid;
 }
+
 .title-instagram {
   font-size: 30px;
   background: #daf196;
@@ -77,11 +124,15 @@
   margin-right: 1rem;
   transform: translateY(-1rem);
 }
+.four-cards {
+  background: white;
+}
 .cards {
   position: relative;
   align-items: center;
   background: #daf196;
   margin-bottom: 30px;
+  padding-bottom: 20px;
 }
 .image-before-text {
   display: flex;
@@ -89,10 +140,76 @@
   margin-top: -25px;
 }
 
-.strike-price {
-  text-decoration: line-through;
-  color: red;
-}
-.discover-button {
+.discover-button-left {
+  top: 5px;
+  bottom: 25px;
+  position: relative;
   color: black;
+  text-decoration: none;
+  font-size: 16px;
+}
+.discover-button-right {
+  top: 5px;
+  bottom: 25px;
+  position: relative;
+  color: black;
+  text-decoration: none;
+  font-size: 16px;
+}
+.discover-button-left::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: block;
+  content: "";
+  border-top: 0.1rem solid black;
+  width: 85px;
+  margin-left: 5px;
+  top: 25px;
+}
+.discover-button-right::after {
+  position: absolute;
+  bottom: 0;
+  top: 25px;
+  right: 0;
+  margin-right: 5px;
+  display: block;
+  content: "";
+  border-top: 0.1rem solid black;
+  width: 85px;
+}
+.jm-line-under-text {
+  width: 60px;
+}
+.jm-footer-element-titles::after {
+  display: block;
+  content: "";
+  border-top: 0.1rem solid black;
+  width: 4rem;
+  margin-right: 1rem;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+.jm-text-box-paragraph {
+  margin-top: 20px;
+  size: 16px;
+  color: #777777;
+  width: 300px;
+}
+.right-box-title {
+  position: relative;
+}
+
+.jm-right-text-box-div {
+  margin-top: 20px;
+  display: flex;
+  justify-content: flex-end;
+}
+.jm-right-text-box-paragraph {
+  size: 16px;
+  color: #777777;
+  width: 300px;
+}
+.cards:hover {
+  background: #c4c4c4;
 }
