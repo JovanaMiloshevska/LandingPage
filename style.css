@@ -8,57 +8,139 @@ body {
 h6 {
   font-size: 24px;
 }
-.nav-link {
+
+/*NavBar Section Elements Style*/
+/*Links for navigation*/
+.jm-nav-link {
   font-weight: 400;
   font-size: 20px;
   color: #333333;
+  text-decoration: none;
+  margin-left: 5px;
+  margin-right: 5px;
 }
-.login {
+/*Login*/
+.jm-login {
   color: black;
 }
-.left-text-box {
+
+/*Two text cards Section*/
+.jm-left-text-box {
   margin-bottom: 25px;
   position: relative;
   background: white;
 }
-.right-text-box {
+.jm-left-text {
+  background: #daf196;
+  padding-left: 20px;
+  padding-top: 20px;
+}
+.jm-discover-button-left {
+  top: 5px;
+  bottom: 25px;
+  position: relative;
+  color: black;
+  text-decoration: none;
+  font-size: 16px;
+}
+.jm-discover-button-left::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: block;
+  content: "";
+  border-top: 0.1rem solid black;
+  width: 85px;
+  margin-left: 5.5px;
+  top: 25px;
+}
+.jm-left-box-photo {
+  margin-top: 25px;
+  display: flex;
+  justify-content: flex-end;
+}
+.jm-right-text-box {
   text-align: end;
   position: relative;
   background: white;
 }
 
-.left-text {
-  background: #daf196;
-  padding-left: 20px;
-  padding-top: 20px;
-}
-.right-text {
+.jm-right-text {
   position: relative;
   background: #daf196;
   padding-right: 20px;
   padding-top: 20px;
 }
-.left-box-photo {
-  margin-top: 25px;
+.jm-right-box-title {
+  position: relative;
+}
+.jm-right-text-box-div {
+  margin-top: 20px;
   display: flex;
   justify-content: flex-end;
 }
-
+.jm-right-text-box-paragraph {
+  size: 16px;
+  color: #777777;
+  width: 300px;
+}
+.jm-discover-button-right {
+  top: 5px;
+  bottom: 25px;
+  position: relative;
+  color: black;
+  text-decoration: none;
+  font-size: 16px;
+}
+.jm-discover-button-right::after {
+  position: absolute;
+  bottom: 0;
+  top: 25px;
+  right: 0;
+  margin-right: 5.5px;
+  display: block;
+  content: "";
+  border-top: 0.1rem solid black;
+  width: 85px;
+  align-items: center;
+}
 .right-box-photo {
   margin-top: 25px;
   display: flex;
   justify-content: flex-start;
 }
+.jm-text-box-paragraph {
+  margin-top: 20px;
+  size: 16px;
+  color: #777777;
+  width: 300px;
+}
 
-.text-behind-photo {
+/*Monthly Deals Section*/
+.jm-cards {
+  position: relative;
+  align-items: center;
+  background: #daf196;
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+}
+.jm-cards:hover {
+  background: #c4c4c4;
+}
+.jm-image-before-text {
+  display: flex;
+  justify-content: center;
+  margin-top: -25px;
+}
+.jm-text-behind-photo {
   margin-left: 25px;
   margin-top: 25px;
   margin-bottom: 25px;
 }
-.discount {
+.jm-discount {
   color: #777777;
 }
-.strike-price {
+.jm-strike-price {
   text-decoration: line-through;
   color: #777777;
 }
@@ -70,7 +152,6 @@ h6 {
   align-items: center;
   justify-content: center;
 }
-
 .jm-circle-before-add-to-card {
   display: flex;
   align-items: center;
@@ -80,43 +161,21 @@ h6 {
   background: #777777;
   margin-right: 5px;
 }
-.black-circle {
-  padding-bottom: 1px;
-}
 
-.add-to-cart {
+.jm-add-to-cart {
   display: inline-block;
   background: #333333;
   color: white;
   padding: 5px 39px;
 }
 
-.products {
+/*Best Seller, New Arrival & Featured*/
+.jm-products {
   flex: display;
   justify-content: space-around;
 }
-.photos {
-  display: -ms-inline-grid;
-}
-
-.title-instagram {
-  font-size: 30px;
-  background: #daf196;
-  text-align: center;
-  width: 50%;
-  margin: auto;
-}
-.title-sponsor {
-  font-size: 90px;
-  text-align: center;
-  background: #daf196;
-  color: #333333;
-}
-.footer {
-  background: #daf196;
-  display: -ms-inline-grid;
-}
-.smaller-titles::before {
+/*Line that appears before the Best Seller, New Arrival & Featured */
+.jm-smaller-titles::before {
   display: inline-block;
   content: "";
   border-top: 0.1rem solid black;
@@ -124,7 +183,15 @@ h6 {
   margin-right: 1rem;
   transform: translateY(-1rem);
 }
-.title::before {
+.jm-three-element-group {
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+}
+
+/*Testemonials*/
+/*The same class is used for the line before the Monthly Deals title section*/
+.jm-title::before {
   display: inline-block;
   content: "";
   border-top: 0.1rem solid black;
@@ -132,103 +199,77 @@ h6 {
   margin-right: 1rem;
   transform: translateY(-1rem);
 }
-.four-cards {
-  background: white;
-}
-.cards {
-  position: relative;
-  align-items: center;
+
+/*Instagram Photos Section*/
+.jm-title-instagram {
+  font-size: 30px;
   background: #daf196;
-  margin-bottom: 30px;
-  padding-bottom: 20px;
+  text-align: center;
+  width: 50%;
+  margin: auto;
 }
-.image-before-text {
+.jm-instagram-photos {
+  display: inline;
+}
+
+/*Sponsor*/
+.jm-title-sponsor {
+  font-size: 90px;
+  text-align: center;
+  background: #daf196;
+  color: #333333;
+}
+/*Footer*/
+.jm-footer {
+  background: #daf196;
   display: flex;
-  justify-content: center;
-  margin-top: -25px;
-}
-
-.discover-button-left {
-  top: 5px;
-  bottom: 25px;
-  position: relative;
-  color: black;
-  text-decoration: none;
-  font-size: 16px;
-}
-.discover-button-right {
-  top: 5px;
-  bottom: 25px;
-  position: relative;
-  color: black;
-  text-decoration: none;
-  font-size: 16px;
-}
-.discover-button-left::after {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  display: block;
-  content: "";
-  border-top: 0.1rem solid black;
-  width: 85px;
-  margin-left: 5px;
-  top: 25px;
-}
-.discover-button-right::after {
-  position: absolute;
-  bottom: 0;
-  top: 25px;
-  right: 0;
-  margin-right: 5px;
-  display: block;
-  content: "";
-  border-top: 0.1rem solid black;
-  width: 85px;
-}
-.jm-line-under-text {
-  width: 60px;
-}
-
-.jm-text-box-paragraph {
-  margin-top: 20px;
-  size: 16px;
-  color: #777777;
-  width: 300px;
-}
-.right-box-title {
-  position: relative;
-}
-
-.jm-right-text-box-div {
-  margin-top: 20px;
-  display: flex;
-  justify-content: flex-end;
-}
-.jm-right-text-box-paragraph {
-  size: 16px;
-  color: #777777;
-  width: 300px;
-}
-.cards:hover {
-  background: #c4c4c4;
-}
-
-.jm-black-circle-icons {
-  margin-top: 50px;
-  margin-right: 10px;
-}
-footer {
   padding-top: 100px;
 }
+.jm-footer-element {
+  margin-bottom: 15px;
+}
+.jm-footer-element-titles {
+  color: #333333;
+  font-weight: 600;
+  font-size: 24px;
+}
+.jm-footer-element-titles::after {
+  display: block;
+  content: "";
+  border-top: 0.1rem solid black;
+  width: 4rem;
+  margin-right: 1rem;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+.jm-footer-element-titles {
+  color: #333333;
+  font-weight: 600;
+  font-size: 24px;
+}
+.jm-footer-element-titles::after {
+  display: block;
+  content: "";
+  border-top: 0.1rem solid black;
+  width: 4rem;
+  margin-right: 1rem;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+.jm-footer-element-logo {
+  color: #333333;
+  font-weight: 600;
+  font-size: 24px;
+}
+
+/*Style for components of the Get In Touch section of the Footer*/
 .jm-get-in-touch-text {
   display: flex;
   align-items: center;
 }
 .jm-get-in-touch {
   display: inline-block;
-  margin-right: 50px;
-  width: 80px;
+  width: 125px;
   font-weight: 500;
   color: #333333;
   font-size: 20px;
@@ -239,35 +280,8 @@ footer {
   color: #333333;
   font-size: 16px;
 }
-.jm-footer-element-title {
-  color: #333333;
-  font-weight: 600;
-  font-size: 24px;
-}
-
-.jm-footer-element-titles {
-  color: #333333;
-  font-weight: 600;
-  font-size: 24px;
-}
-
-.jm-footer-element-titles::after {
-  display: block;
-  content: "";
-  border-top: 0.1rem solid black;
-  width: 4rem;
-  margin-right: 1rem;
-  margin-bottom: 10px;
-  margin-top: 10px;
-}
-
-.bi {
-  margin-top: 25px;
-  margin-right: 20px;
-  margin-bottom: 25px;
-  bottom: 10px;
-}
-.social-links {
+.jm-social-links {
   text-decoration: none;
   color: #333333;
+  margin-right: 10px;
 }
