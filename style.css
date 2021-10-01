@@ -1,3 +1,10 @@
+@font-face {
+  font-family: "taviraj";
+  src: url("font/Taviraj-Medium.ttf");
+}
+body {
+  font-family: taviraj;
+}
 h6 {
   font-size: 24px;
 }
@@ -103,6 +110,7 @@ h6 {
   font-size: 90px;
   text-align: center;
   background: #daf196;
+  color: #333333;
 }
 .footer {
   background: #daf196;
@@ -181,15 +189,7 @@ h6 {
 .jm-line-under-text {
   width: 60px;
 }
-.jm-footer-element-titles::after {
-  display: block;
-  content: "";
-  border-top: 0.1rem solid black;
-  width: 4rem;
-  margin-right: 1rem;
-  margin-bottom: 10px;
-  margin-top: 10px;
-}
+
 .jm-text-box-paragraph {
   margin-top: 20px;
   size: 16px;
@@ -212,4 +212,57 @@ h6 {
 }
 .cards:hover {
   background: #c4c4c4;
+}
+
+.jm-black-circle-icons {
+  margin-top: 50px;
+  margin-right: 10px;
+}
+.jm-get-in-touch-text {
+  display: flex;
+  align-items: center;
+}
+.jm-get-in-touch {
+  display: inline-block;
+  margin-right: 75px;
+  width: 80px;
+  font-weight: 500;
+  color: #333333;
+  font-size: 20px;
+}
+.jm-customer-service-num {
+  display: inline-block;
+  font-weight: 400;
+  color: #333333;
+  font-size: 16px;
+}
+.jm-footer-element-title {
+  color: #333333;
+  font-weight: 600;
+  font-size: 24px;
+}
+
+.jm-footer-element-titles {
+  color: #333333;
+  font-weight: 600;
+  font-size: 24px;
+}
+
+.jm-footer-element-titles::after {
+  display: block;
+  content: "";
+  border-top: 0.1rem solid black;
+  width: 4rem;
+  margin-right: 1rem;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+.bi {
+  margin-right: 20px;
+  margin-bottom: 10px;
+}
+.social-media-icon {
+  width: 31px;
+  height: 31px;
+  vertical-align: middle;
 }
