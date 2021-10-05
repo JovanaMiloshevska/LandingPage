@@ -118,6 +118,8 @@ h6 {
 
 /*Monthly Deals Section*/
 .jm-cards {
+  display: flex;
+  flex-direction: column;
   position: relative;
   align-items: center;
   background: #daf196;
@@ -128,14 +130,31 @@ h6 {
   background: #c4c4c4;
 }
 .jm-image-before-text {
+  position: relative;
+  width: 200px;
+  height: 221px;
   display: flex;
   justify-content: center;
+  align-items: center;
   margin-top: -25px;
 }
+.jm-images-for-cards {
+  position: absolute;
+  width: 200px;
+  max-width: 100%;
+  height: auto;
+}
 .jm-text-behind-photo {
-  margin-left: 25px;
   margin-top: 25px;
   margin-bottom: 25px;
+}
+.jm-name-of-the-product {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 200px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 .jm-discount {
   color: #777777;
@@ -200,16 +219,36 @@ h6 {
   transform: translateY(-1rem);
 }
 
-/*Instagram Photos Section*/
-.jm-title-instagram {
+/*Top Brands Section*/
+.jm-title-top-brands {
   font-size: 30px;
   background: #daf196;
   text-align: center;
   width: 50%;
   margin: auto;
 }
-.jm-instagram-photos {
+.jm-top-brands {
   display: inline;
+}
+.jm-dark {
+  width: 196px;
+  height: 196px;
+  position: relative;
+}
+.jm-dark-overlay {
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.4);
+  color: #ffffff;
+  border-style: groove;
+}
+.jm-dark-overlay:hover {
+  object-fit: cover;
+  opacity: 0.1;
+  color: #ffffff;
 }
 
 /*Sponsor*/
