@@ -188,6 +188,78 @@ h6 {
   padding: 5px 39px;
 }
 
+/*Recent News Section*/
+@media (max-width: 1495,98px) {
+  .jm-recent-news-colored-div {
+    display: none;
+  }
+}
+.recent-news {
+  position: relative;
+}
+.jm-recent-news-text {
+  margin-right: 110px;
+}
+.jm-recent-news-colored-div {
+  width: 810px;
+  height: 479px;
+  background: #daf196;
+  position: absolute;
+  top: 7px;
+  left: 596px;
+  z-index: -1;
+}
+
+.jm-recent-news-image {
+  position: relative;
+  width: 474px;
+  height: 472px;
+  border-style: solid;
+  border-color: red;
+  animation: imageAnimation;
+  animation-duration: 5s;
+}
+@keyframes imageAnimation {
+  from {
+    left: 0px;
+  }
+  to {
+    left: 197px;
+  }
+}
+
+.jm-recent-news-span {
+  color: #777777;
+  margin-bottom: 10px;
+  transition: font-size 2s;
+}
+.jm-recent-news-span:hover {
+  font-size: larger;
+}
+.jm-recent-news-h3 {
+  color: #333333;
+  transition: font-size 2s;
+}
+.jm-recent-news-h3:hover {
+  font-size: 30px;
+}
+
+.jm-recent-news-discover {
+  width: 100px;
+  height: 40px;
+  border-style: groove;
+  border-color: #333333;
+  text-decoration: none;
+  color: #333333;
+  margin-top: 35px;
+  transition: width 2s;
+  transition: font-size 2s;
+}
+.jm-recent-news-discover:hover {
+  width: 150px;
+  font-size: 20px;
+  color: #333333;
+}
 /*Best Seller, New Arrival & Featured*/
 .jm-products {
   flex: display;
@@ -216,7 +288,7 @@ h6 {
   border-top: 0.1rem solid black;
   width: 7rem;
   margin-right: 1rem;
-  transform: translateY(-1rem);
+  transform: translateY(-7px);
 }
 
 /*Top Brands Section*/
