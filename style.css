@@ -189,16 +189,13 @@ h6 {
 }
 
 /*Recent News Section*/
-@media (max-width: 1495,98px) {
-  .jm-recent-news-colored-div {
-    display: none;
-  }
-}
+
 .recent-news {
   position: relative;
 }
 .jm-recent-news-text {
-  margin-right: 110px;
+  width: 450px;
+  max-width: 100%;
 }
 .jm-recent-news-colored-div {
   width: 810px;
@@ -208,6 +205,11 @@ h6 {
   top: 7px;
   left: 596px;
   z-index: -1;
+}
+@media (max-width: 1495,98px) {
+  .jm-recent-news-colored-div {
+    display: none;
+  }
 }
 
 .jm-recent-news-image {
@@ -224,7 +226,7 @@ h6 {
     left: 0px;
   }
   to {
-    left: 197px;
+    left: 147px;
   }
 }
 
